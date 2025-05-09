@@ -1,2 +1,2 @@
-# CustomColumbiaPCs
-website for CustomColumbiaPCs
+# ColumbiaCustomPCs
+ColumbiaCustomPCs website
