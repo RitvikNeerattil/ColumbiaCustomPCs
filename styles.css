@@ -1,116 +1,81 @@
 /* styles.css */
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'Arial', sans-serif;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: rgb(44, 44, 44);
-    font-size: 18px;
-    line-height: 1.6;
-  }
-  .banner {
-    background-color: #000000;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-  .top-banner {
-    justify-content: space-between;
-  }
-  .bottom-banner {
-    margin-top: auto;
-    flex-shrink: 0;
-    flex-direction: column;
-  }
-  .logo {
-    height: 80px;
-  }
-  .btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #ffffff;
-    color: #000000;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding: 2rem;
-    background-image: url("images/PC Images/heroBackground.png");
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    width: 100%;
-  }
-  
-  .hero-text {
-    flex: 1;
-    max-width: 50%;
-    text-align: left;
-    padding-left: 50px;
-  }
-  .hero-text h1 {
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  .builds {
-    padding: 2rem;
-  }
-  .builds h2 {
-    margin-bottom: 1.5rem;
-  }
-  .build-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    justify-items: center;
-  }
-  .build-card {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 8px;
-    position: relative;
-  }
-  .build-card img {
-    max-width: 60%;
-    height: auto;
-  }
-  .build-card .price {
-    font-weight: bold;
-    margin: 0.5rem 0;
-  }
-  .build-card .status-label {
-    display: block;
-    margin-top: 0.5rem;
-    font-weight: bold;
-  }
-  a {
-    color: white;
-    font-size: 1.1em;
-  }
-  h1, h2, h3 {
-    font-size: 1.5em;
-  }
-  p {
-    font-size: 1.1em;
-  }
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-  }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  background: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.banner {
+  background: #000;
+  padding: 1rem 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  max-width: 150%;
+  max-height: 80px;
+  height: auto;
+}
+.hero {
+  flex: 1;
+  background: url("images/PC Images/heroBackground.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 400px;
+}
+.hero-text { max-width: 80%; text-align: left; }
+.hero-text h1 { margin-bottom: 1rem; }
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover { background: #b4b4b4; }
+.container { width: 100%; max-width: 1200px; margin: auto; padding: 2rem; }
+.builds h2.section-title {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+.divider {
+  border: none;
+  border-top: 1px solid #555;
+  margin: 2rem 0;
+}
+.card {
+  background: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.card img { max-width: 100%; height: auto; }
+.price { font-weight: bold; margin: 0.5rem 0; }
+.sold .label {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+.view-more {
+  display: block;
+  margin: 2rem auto 0;
+}
+footer.banner { flex-shrink: 0; flex-direction: column; }
+footer a { color: #fff; text-decoration: underline; }

@@ -2,89 +2,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Custom Columbia PCs</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="images/Logos/miniLogo.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="images/Logos/miniLogo.png" />
+  <link rel="icon" href="images/Logos/miniLogo.png" sizes="16x16 32x32">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--TOP BANNER-->
-    <header class="banner top-banner">
-      <img src="images/Logos/LongLogo.png" alt="Custom Columbia PCs Logo" class="logo" />
-      <a href="#available-section" class="btn start-build">Start Your Build</a>
-    </header>
-  <!-- HERO SECTION -->
+  <header class="banner">
+    <img src="images/Logos/LongLogo.png" alt="Custom Columbia PCs Logo" class="logo">
+  </header>
+
   <section class="hero">
     <div class="hero-text">
-      <h1>Premier Custom PC Builders of the Midlands</h1>
-      <p>Custom PCs for: Gaming<br/>Productivity<br/>Editing<br/>Work From Home</p>
+      <h1>Exceptional Custom-Built PCs, Crafted for You</h1>
+      <p>✓ Hardcore Gaming<br>✓ Streamlined Productivity<br>✓ Professional Video & Photo Editing<br>✓ Smooth Remote Work</p>
+      <a href="#available" class="btn">Start Your Build</a>
     </div>
   </section>
-  <div class="container">
-    <!--AVAILABLE BUILDS-->
-    <section id="available-section" class="builds">
-      <h2>New Available Builds</h2>
-      <div class="build-grid">
 
-        <div class="build-card">
-          <img src="images/PC Images/placeholder.png"/>
+  <main class="container">
+    <section id="available" class="builds">
+      <h2 class="section-title">New Available Builds</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="images/PC Images/placeholder.png" alt="Ultimate Gamer">
           <h3>Ultimate Gamer</h3>
           <p class="price">$1,999</p>
-          <a href="#" class="btn marketplace">Marketplace Listing</a>
-        </div>
+          <a href="#" class="btn">Marketplace Listing</a>
+        </article>
 
-        <div class="build-card">
-          <img src="images/PC Images/placeholder.png"/>
+        <article class="card">
+          <img src="images/PC Images/placeholder.png" alt="Creative Powerhouse">
           <h3>Creative Powerhouse</h3>
           <p class="price">$2,499</p>
-          <a href="#" class="btn marketplace">Marketplace Listing</a>
-        </div>
+          <a href="#" class="btn">Marketplace Listing</a>
+        </article>
 
-        <div class="build-card">
-          <img src="images/PC Images/placeholder.png"/>
+        <article class="card">
+          <img src="images/PC Images/placeholder.png" alt="Workstation Elite">
           <h3>Workstation Elite</h3>
           <p class="price">$2,199</p>
-          <a href="#" class="btn marketplace">Marketplace Listing</a>
-        </div>
-
+          <a href="#" class="btn">Marketplace Listing</a>
+        </article>
       </div>
     </section>
 
-    <!--SOLD BUILDS-->
-    <section id="sold-section" class="builds">
-      <h2>Sold Builds</h2>
-      <div class="build-grid">
+    <hr class="divider">
 
-        <div class="build-card sold">
-          <img src="images/PC Images/placeholder.png"/>
+    <section class="builds">
+      <h2 class="section-title">Sold Builds</h2>
+      <div class="grid">
+        <article class="card sold">
+          <img src="images/PC Images/placeholder.png" alt="Ultimate Gamer">
           <h3>Ultimate Gamer</h3>
           <p class="price">$1,999</p>
-          <span class="status-label">Sold</span>
-        </div>
+          <span class="label">Sold</span>
+        </article>
 
-        <div class="build-card sold">
-          <img src="images/PC Images/placeholder.png"/>
+        <article class="card sold">
+          <img src="images/PC Images/placeholder.png" alt="Creative Powerhouse">
           <h3>Creative Powerhouse</h3>
           <p class="price">$2,499</p>
-          <span class="status-label">Sold</span>
-        </div>
+          <span class="label">Sold</span>
+        </article>
 
-        <div class="build-card sold">
-          <img src="images/PC Images/placeholder.png"/>
+        <article class="card sold">
+          <img src="images/PC Images/placeholder.png" alt="Workstation Elite">
           <h3>Workstation Elite</h3>
           <p class="price">$2,199</p>
-          <span class="status-label">Sold</span>
-        </div>
-
+          <span class="label">Sold</span>
+        </article>
       </div>
+      <a href="https://www.facebook.com/marketplace/profile/100092421146484/" class="btn view-more" target="_blank">View More</a>
     </section>
-    </div>
-    <!--FOOTER BANNER -->
-    <footer class="banner bottom-banner">
-      <p>Email us: <a href="mailto:columbiacustompcs@gmail.com">columbiacustompcs@gmail.com</a></p>
-      <p>&copy; 2025 Custom Columbia PCs LLC</p>
-    </footer>
+  </main>
+
+  <footer class="banner">
+    <p>Email: <a href="mailto:columbiacustompcs@gmail.com">columbiacustompcs@gmail.com</a></p>
+    <p>&copy; 2025 Custom Columbia PCs LLC</p>
+  </footer>
 </body>
 </html>
