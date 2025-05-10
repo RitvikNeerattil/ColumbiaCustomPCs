@@ -25,12 +25,22 @@ body {
   background: url("images/PC Images/heroBackground.png") center/cover no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   padding: 2rem;
+  padding-left: 20%;
   min-height: 500px;
 }
-.hero-text { font-size: 20px; max-width: 80%; text-align: left; }
-.hero-text h1 { margin-bottom: 1rem; }
+.hero-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  max-width: 80%;
+  text-align: left;
+}
+.hero-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
 .btn {
   display: inline-block;
   margin-top: 1rem;
