@@ -27,9 +27,9 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  min-height: 400px;
+  min-height: 500px;
 }
-.hero-text { max-width: 80%; text-align: left; }
+.hero-text { font-size: 20px; max-width: 80%; text-align: left; }
 .hero-text h1 { margin-bottom: 1rem; }
 .btn {
   display: inline-block;
@@ -44,9 +44,14 @@ body {
 }
 .btn:hover { background: #b4b4b4; }
 .container { width: 100%; max-width: 1200px; margin: auto; padding: 2rem; }
+.builds {
+  margin-top: 2rem;
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+}
 .builds h2.section-title {
   margin-bottom: 0.5rem;
-  font-size: 2rem;
   text-align: center;
 }
 .grid {
@@ -58,7 +63,8 @@ body {
 .divider {
   border: none;
   border-top: 1px solid #555;
-  margin: 2rem 0;
+  margin: 2rem auto;
+  width: 90%;
 }
 .card {
   background: #333;
@@ -68,14 +74,73 @@ body {
 }
 .card img { max-width: 100%; height: auto; }
 .price { font-weight: bold; margin: 0.5rem 0; }
-.sold .label {
-  display: block;
-  margin-top: 0.5rem;
-  font-weight: bold;
-}
 .view-more {
-  display: block;
-  margin: 2rem auto 0;
-}
-footer.banner { flex-shrink: 0; flex-direction: column; }
+    display: block;
+    margin: 2rem auto 0;
+    max-width: 140px;
+    text-align: center;
+  }  
+footer.banner { flex-shrink: 0; flex-direction: column; padding: 1rem}
 footer a { color: #fff; text-decoration: underline; }
+.about {
+  margin-top: 2rem;
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.about-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  height: 180px;
+  width: auto;
+  border-radius: 7%;
+}
+.about-img {
+  height: 180px;
+  width: auto;
+  border-radius: 7%;
+  padding-bottom: 10px;
+}
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.reviews {
+  margin-top: 2rem;
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.review-card {
+  background: #444;
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-style: italic;
+  color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.reviews .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.review-card footer {
+  margin-top: 3px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 18px;
+}
+.section-title {
+  text-align: center;
+  font-size: 100px;
+  font-size: 2rem;
+}
