@@ -88,21 +88,6 @@ footer a { color: #fff; text-decoration: underline; }
   padding: 1rem;
   border-radius: 8px;
 }
-.about-images {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-  height: 180px;
-  width: auto;
-  border-radius: 7%;
-}
-.about-img {
-  height: 180px;
-  width: auto;
-  border-radius: 7%;
-  padding-bottom: 10px;
-}
 .about-text {
   font-size: 1.1rem;
   line-height: 1.6;
