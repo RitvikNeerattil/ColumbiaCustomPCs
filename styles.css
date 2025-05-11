@@ -25,9 +25,8 @@ body {
   background: url("images/PC Images/heroBackground.png") center/cover no-repeat;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   padding: 2rem;
-  padding-left: 20%;
   min-height: 500px;
 }
 .hero-text {
