@@ -22,6 +22,40 @@
       <a href="#available" class="btn">Start Your Build</a>
     </div>
   </section>
+<div class="container">
+  <section class="pc-builder">
+    <h2 class="section-title">Build Configurator</h2>
+
+    <div class="slider-container">
+      <input type="range" id="budget-min" min="500" max="3000" step="100" value="1000">
+      <input type="range" id="budget-max" min="500" max="3000" step="100" value="2000">
+    </div>
+
+
+    <div class="resolution-buttons">
+      <input type="radio" name="resolution" id="res-1080p" checked>
+      <label for="res-1080p" class="box">1080p<br>1920 x 1080</label>
+
+      <input type="radio" name="resolution" id="res-1440p">
+      <label for="res-1440p" class="box">1440p<br>2560 x 1440</label>
+
+      <input type="radio" name="resolution" id="res-4k">
+      <label for="res-4k" class="box">4K<br>3840 x 2160</label>
+
+
+      <p id="resolution-info" class="resolution-info">
+        1080p (Full HD) is perfect for most users and gamers who want smooth performance with good image quality. 
+        It’s easy on your PC’s hardware, so you get higher frame rates without needing a top-end graphics card. 
+        1440p (Quad HD) offers a sharper, more detailed picture—ideal if you want a noticeable upgrade in clarity and 
+        have a mid-range GPU that can handle it. 4K (Ultra HD) provides stunning, ultra-clear visuals with four times the 
+        pixels of 1080p, perfect for large monitors or professional tasks like video editing, but it demands a powerful 
+        graphics card to maintain smooth gameplay or performance.
+      </p>
+    </div>
+
+  </section>
+</div>
+
 
   <main class="container">
     <section id="available" class="builds">
@@ -49,7 +83,7 @@
         </article>
       </div>
     </section>
-
+  
     <hr class="divider">
 
     <section id="about" class="about">
