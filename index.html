@@ -23,37 +23,40 @@
     </div>
   </section>
 <div class="container">
-  <section class="pc-builder">
-    <h2 class="section-title">Build Configurator</h2>
 
-    <div class="slider-container">
-      <input type="range" id="budget-min" min="500" max="3000" step="100" value="1000">
-      <input type="range" id="budget-max" min="500" max="3000" step="100" value="2000">
-    </div>
+ <hr class="divider">
 
+<form class="contact-form" action="mailto:columbiacustompcs@gmail.com" method="POST" enctype="text/plain">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+  </div>
 
-    <div class="resolution-buttons">
-      <input type="radio" name="resolution" id="res-1080p" checked>
-      <label for="res-1080p" class="box">1080p<br>1920 x 1080</label>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+  </div>
 
-      <input type="radio" name="resolution" id="res-1440p">
-      <label for="res-1440p" class="box">1440p<br>2560 x 1440</label>
+  <div class="form-group">
+    <label for="budget">Budget Range</label>
+    <input type="text" id="budget" name="budget" placeholder="e.g., $800–$1200 or Max $1500" required>
+  </div>
 
-      <input type="radio" name="resolution" id="res-4k">
-      <label for="res-4k" class="box">4K<br>3840 x 2160</label>
+  <div class="form-group">
+    <label for="preferences">Hardware Preferences (e.g., Intel/NVIDIA, RGB, small form factor)</label>
+    <textarea id="preferences" name="preferences" rows="3" placeholder="List any components or features you'd prefer (e.g., 'NVIDIA GPU, 1TB SSD, RGB lighting')..."></textarea>
+  </div>
 
+  <div class="form-group">
+    <label for="message">Message / Build Requirements</label>
+    <textarea id="message" name="message" rows="6" placeholder="Tell us what kind of PC you're looking for..." required></textarea>
+  </div>
 
-      <p id="resolution-info" class="resolution-info">
-        1080p (Full HD) is perfect for most users and gamers who want smooth performance with good image quality. 
-        It’s easy on your PC’s hardware, so you get higher frame rates without needing a top-end graphics card. 
-        1440p (Quad HD) offers a sharper, more detailed picture—ideal if you want a noticeable upgrade in clarity and 
-        have a mid-range GPU that can handle it. 4K (Ultra HD) provides stunning, ultra-clear visuals with four times the 
-        pixels of 1080p, perfect for large monitors or professional tasks like video editing, but it demands a powerful 
-        graphics card to maintain smooth gameplay or performance.
-      </p>
-    </div>
+  <button type="submit" class="btn">Send Message</button>
+</form>
 
-  </section>
+ <hr class="divider">
+
 </div>
 
 
