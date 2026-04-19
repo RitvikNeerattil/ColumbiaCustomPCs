@@ -1,0 +1,25 @@
+CREATE DATABASE IF NOT EXISTS columbia_custom_pcs;
+USE columbia_custom_pcs;
+
+CREATE TABLE IF NOT EXISTS builds (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(120) NOT NULL,
+  category VARCHAR(120) NOT NULL,
+  price DECIMAL(10, 2) NOT NULL,
+  specs TEXT NOT NULL,
+  image_path VARCHAR(255) NOT NULL,
+  marketplace_url VARCHAR(255) NOT NULL,
+  is_active TINYINT(1) NOT NULL DEFAULT 1,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS commission_requests (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(120) NOT NULL,
+  email VARCHAR(190) NOT NULL,
+  budget VARCHAR(80) NOT NULL,
+  preferences TEXT,
+  use_case TEXT NOT NULL,
+  timeline VARCHAR(120),
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
