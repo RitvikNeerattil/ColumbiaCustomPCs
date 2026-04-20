@@ -26,7 +26,8 @@ app.get('/api/health', async (_request, response) => {
         return true;
       })
     );
-  } catch (_error) {
+  } catch (error) {
+    console.error('Health check database error:', error);
     databaseConnected = false;
   }
 
@@ -62,6 +63,7 @@ app.get('/api/builds', async (_request, response) => {
 
     response.json({ builds });
   } catch (error) {
+    console.error('Build inventory query failed:', error);
     response.status(500).json({
       error: 'Unable to load builds.',
       details: error.message
@@ -107,6 +109,7 @@ app.post('/api/commissions', async (request, response) => {
       storedInDatabase: true
     });
   } catch (error) {
+    console.error('Commission insert failed:', error);
     response.status(500).json({
       error: 'Unable to submit commission request.',
       details: error.message
