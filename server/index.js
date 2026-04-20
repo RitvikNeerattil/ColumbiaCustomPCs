@@ -93,7 +93,7 @@ app.post('/api/commissions', async (request, response) => {
         [name, email, budget, preferences, useCase, timeline]
       );
 
-      return insert.insertId;
+      return Number(insert.insertId);
     });
 
     if (!result) {
