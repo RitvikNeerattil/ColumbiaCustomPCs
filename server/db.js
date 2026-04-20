@@ -42,7 +42,8 @@ function getPool() {
   if (!pool) {
     pool = mariadb.createPool({
       ...config,
-      connectionLimit: 5
+      connectionLimit: 5,
+      allowPublicKeyRetrieval: true
     });
   }
 
