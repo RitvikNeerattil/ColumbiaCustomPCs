@@ -182,12 +182,11 @@ export default function App() {
                 Custom Builds | Columbia, SC
               </p>
               <h1 className="mt-5 font-display text-5xl uppercase leading-none text-white sm:text-6xl lg:text-7xl">
-                Responsive storefront for custom gaming and workstation PCs.
+                Custom PCs built around how you actually work and play.
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-mist">
-                Columbia Custom PCs pairs a React frontend with a structured inventory API and
-                commission pipeline so customers can browse builds, submit specs, and get a faster
-                quote turnaround.
+                Gaming rigs, creator workstations, and everyday performance builds assembled in
+                Columbia, SC with honest pricing, clear communication, and local support.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
@@ -228,8 +227,8 @@ export default function App() {
               <h2 className="mt-3 font-display text-4xl uppercase text-white">Current Inventory</h2>
             </div>
             <p className="max-w-xl text-sm leading-7 text-mist">
-              Inventory is delivered from the Express API as structured JSON so the frontend stays
-              easy to maintain and update.
+              Browse ready-to-buy systems below, or reach out for a custom parts list built around
+              your budget and goals.
             </p>
           </div>
 
@@ -291,8 +290,8 @@ export default function App() {
                 Submit what you need and get a scoped quote.
               </h2>
               <p className="mt-5 text-base leading-8 text-mist">
-                The form posts directly to the Node.js and Express backend, where requests can be
-                validated and stored in MariaDB for follow-up, pricing, and delivery planning.
+                Tell us your budget, preferred parts, and what you want the PC to handle. We will
+                reach out with recommendations, pricing, and next steps.
               </p>
               <div className="mt-8 rounded-[2rem] border border-white/10 bg-white/5 p-6">
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-mist">
@@ -410,8 +409,8 @@ export default function App() {
               <h2 className="mt-3 font-display text-4xl uppercase text-white">Marketplace Trust</h2>
             </div>
             <p className="max-w-xl text-sm leading-7 text-mist">
-              Local sales through Facebook Marketplace still need a polished frontend story, fast
-              communication, and clean delivery expectations.
+              Real feedback from local buyers who wanted straightforward communication, fair
+              pricing, and a machine that worked exactly as promised.
             </p>
           </div>
 
